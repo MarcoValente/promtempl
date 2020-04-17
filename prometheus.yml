@@ -1,0 +1,17 @@
+global:
+  scrape_interval:     2s # By default, scrape targets every 15 seconds.
+  evaluation_interval: 2s # By default, evaluate targets every 15 seconds.
+
+
+# Load and evaluate rules in this file every 'evaluation_interval' seconds.
+rule_files:
+  - /etc/prometheus/rules/*.rules
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'promtempl'
+
+    static_configs:
+      - targets: ['promtempl:9091']

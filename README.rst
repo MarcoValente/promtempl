@@ -3,15 +3,9 @@ promtempl
 =========
 
 
-Add a short description here!
+A template package for a prometheus-based database
 
-
-Description
-===========
-
-A longer description of your project goes here...
-
-
+====
 Note
 ====
 
